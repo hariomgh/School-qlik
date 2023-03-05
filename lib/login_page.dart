@@ -18,8 +18,8 @@ class _LoginPageState extends State<LoginPage> {
       Response response = await post(
         Uri.parse('https://app.schoolqlik.com/users/LoginWithOtp'),
         body: {
-          'email' : email,
-          'password' : password
+          'emailid' : email,
+          'psd' : password
         }
       );
 
